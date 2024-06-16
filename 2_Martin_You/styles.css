@@ -1,0 +1,124 @@
+body{
+
+}
+
+.container{
+    margin: 1rem auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.title{
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.button{
+    margin: 1rem auto;
+    padding: 1.5rem 4rem;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 5rem;
+    text-align: center;
+    width: 10rem;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.button:hover{
+    box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.496);
+    transform: translateY(-10%);
+    cursor: pointer;
+}
+
+.button:active{
+    background-color: rgb(194, 0, 0);
+    color: rgb(198, 198, 198);
+}
+
+.cool{
+    font-size: 7rem;
+    font-weight: bolder;
+    text-align: center;
+    transition: 5s;
+}
+
+.cool:hover{
+    transform: rotateY(3600deg);
+}
+
+.gallery{
+    position: relative;
+    margin: 0 auto;
+}
+
+.minecraft{
+    position: absolute;
+    height: 20rem;
+    transition: .5s;
+    filter: blur(.1rem);
+}
+
+.minecraft:hover{
+    transform: scale(120%);
+    z-index: 2;
+    filter: blur(0rem);
+}
+
+.gallery:hover .minecraft:not(:hover){
+    filter: blur(.3rem);
+}
+
+.creeper{
+    top: 0rem;
+    left: 25%;
+}
+
+.skeleton{
+    top: 5rem;
+    left: 45%;
+}
+
+.zombie{
+    top: 15rem;
+    left: 30%;
+}
+
+.amogus{ /*Idk how to make it below the images*/
+    position: relative; /*idk what this does*/
+    transition: 10s;
+    top: 40rem;
+}
+
+.amogus:hover{ 
+    transform: skew(1000deg,1000deg);
+}
+
+.smoge{
+    position: relative;
+    top: 55rem;
+    transition: 5s;
+    height: 20rem;
+}
+
+.smoge:hover{
+    filter: grayscale(100%);
+    transform: translateY(10rem);
+}
+
+.satoru{
+    position: relative;
+    top: 55rem;
+    transition: 5s;
+    height: 20rem;
+}
+
+.satoru:hover{
+    filter: hue-rotate(360deg);
+}
